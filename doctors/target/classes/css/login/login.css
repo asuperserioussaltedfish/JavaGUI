@@ -1,0 +1,40 @@
+#username-field {
+    -fx-background-color: transparent;
+    -fx-border-color: #4A004A;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px
+}
+
+#icon {
+    -fx-text-fill: #4A004A;
+}
+
+#text-field {
+    -fx-background-color: transparent;
+    -fx-font-size: 16px;
+    -fx-font-family: "Microsoft YaHei UI";
+    -fx-prompt-text-fill: #4A004A;
+    -fx-text-fill: #4A004A;
+}
+
+
+#label {
+    -fx-font-family: "Microsoft YaHei UI";
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+}
+#login-button {
+    -fx-background-color: transparent;
+    -fx-border-color: #4A004A;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-text-fill: #4A004A;
+    -fx-font-size: 16px;
+    -fx-font-family: "Microsoft YaHei UI";
+}
+
+#login-button:hover {
+    -fx-border-color: #E0CEFF;
+    -fx-text-fill: #E0CEFF;
+    -fx-cursor: hand;
+}

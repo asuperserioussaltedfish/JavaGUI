@@ -1,0 +1,34 @@
+#username-field {
+    -fx-background-color: transparent;
+    -fx-border-color: #4A2500;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px
+}
+
+#icon {
+    -fx-text-fill: #4A2500;
+}
+
+#text-field {
+    -fx-background-color: transparent;
+    -fx-font-size: 12px;
+    -fx-prompt-text-fill: #4A2500;
+    -fx-text-fill: #4A2500;
+}
+
+#label {
+    -fx-text-fill: #000000;
+    -fx-font-size: 12px;
+}
+#login-button {
+    -fx-background-color: transparent;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-text-fill: #4A2500;
+    -fx-font-size: 12px;
+}
+
+#login-button:hover {
+    -fx-text-fill: #fff;
+    -fx-cursor: hand;
+}

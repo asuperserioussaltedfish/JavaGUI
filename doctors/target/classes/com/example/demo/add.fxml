@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<AnchorPane prefHeight="398.0" prefWidth="603.0" stylesheets="@View.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.modules.manage.AddController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="603.0">
+         <children>
+            <Text fill="#6433b9" layoutX="71.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="患者编号">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text fill="#6433b9" layoutX="71.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="患者账号">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text fill="#6433b9" layoutX="71.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="患者姓名">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text fill="#6433b9" layoutX="354.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="患者年龄">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text fill="#6433b9" layoutX="354.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="患者性别">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text fill="#6433b9" layoutX="71.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="患者病情">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <ImageView fx:id="imageView" fitHeight="139.0" fitWidth="141.0" layoutX="354.0" layoutY="66.0" onMouseClicked="#handleChangeImage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@addtupian.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="225.0" layoutY="316.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="119.0" onMouseClicked="#handleAddPatient" styleClass="addhuanzhe" text="立即添加" fx:id="abc" />
+            <TextField layoutX="139.0" layoutY="82.0" styleClass="inputsearch" fx:id="patientIdField" style="-fx-background-color: #f4f4f4" editable="false" />
+            <TextField layoutX="139.0" layoutY="123.0" styleClass="inputsearch" fx:id="patientAccountField"/>
+            <TextField layoutX="139.0" layoutY="214.0" styleClass="inputsearch" fx:id="patientNameField"/>
+            <TextField layoutX="423.0" layoutY="255.0" prefHeight="23.0" prefWidth="63.0" styleClass="inputsearch" fx:id="patientAgeField"/>
+            <TextField layoutX="139.0" layoutY="255.0" styleClass="inputsearch" fx:id="patientConditionField"/>
+            <ChoiceBox layoutX="423.0" layoutY="214.0" prefHeight="23.0" prefWidth="63.0" value="男" fx:id="patientGenderChoiceBox">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="男"/>
+                     <String fx:value="女"/>
+                  </FXCollections>
+               </items>
+            </ChoiceBox>
+            <Text fill="#6433b9" layoutX="71.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="患者密码">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField layoutX="139.0" layoutY="166.0" styleClass="inputsearch" fx:id="patientPasswordField"/>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,175 @@
+.bg {
+    -fx-background-image: url(background.jpg);
+}
+
+.inputsearch {
+    -fx-border-color: #BFA9D9;
+}
+
+.inputsearch:focused {
+    -fx-focus-color: #CEC3DF; /* 较浅的灰色作为焦点颜色 */
+    -fx-faint-focus-color: #CEC3DF; /* 相同或类似的颜色作为微弱焦点颜色 */
+    -fx-border-color: #CEC3DF;
+}
+.col {
+    -fx-alignment: center;
+}
+.baground {
+    /*-fx-background-image: url("");*/
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+
+.table-view .column-header-background .label {
+    -fx-font-size: 14px;
+    -fx-font-family: "Microsoft YaHei UI";
+    -fx-text-fill: #DFD8E8;
+    -fx-background-color: #fff;
+}
+
+.table-view > .column-header-background{
+    -fx-pref-height: 40;
+    -fx-font-family: "Microsoft YaHei UI";
+
+}
+
+/*设置每一列内容居中，每一行高度*/
+.table-row-cell{
+    -fx-cell-size: 45px;
+    -fx-alignment: center;
+}
+
+.table-view .cell,
+.table-view .column-header .label {
+    -fx-font-size: 12px;
+    -fx-font-family: Verdana;
+    -fx-text-fill: rgb(95, 74, 121);
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color: rgb(223, 216, 232);
+}
+.table-view .table-row-cell:odd {
+    -fx-background-color: #FFFFFF;
+}
+/* 当鼠标停留在偶数行上时改变字体颜色 */
+.table-view .table-row-cell:even:hover {
+    -fx-background-color: #a593c0;
+}
+
+/* 当鼠标停留在奇数行上时改变字体颜色 */
+.table-view .table-row-cell:odd:hover {
+    -fx-background-color: #a593c0;
+}
+
+/* 设置偶数行单元格文本颜色 */
+.table-view .table-row-cell:even:hover .table-cell {
+    -fx-text-fill: #fff; /* 设定悬停状态下字体颜色 */
+}
+
+/* 设置奇数行单元格文本颜色 */
+.table-view .table-row-cell:odd:hover .table-cell {
+    -fx-text-fill: #fff; /* 设定悬停状态下字体颜色 */
+}
+.table-view {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.addhuanzhe {
+    -fx-background-color: #B39BD9;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-text-fill: #fff;
+    -fx-font-size: 12px;
+}
+
+.addhuanzhe:hover {
+    -fx-background-color: #946ED5;
+    -fx-text-fill: #fff;
+    -fx-cursor: hand;
+}
+.xuanze:hover {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-color: #CCC8DF;
+    -fx-cursor:  hand;
+}
+/* 用于去掉table-view水平滑动条 */
+.remove-scroll .virtual-flow .scroll-bar:horizontal {
+    -fx-pref-height: 0;
+}
+
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #A296BC;
+    -fx-background-insets: 2;
+    -fx-background-radius: 4px;
+}
+
+.table-view .scroll-bar:vertical .track {
+    -fx-background-color: #CCC7DE;
+    -fx-background-insets: 2;
+    -fx-background-radius: 4px;
+}
+
+.table-view .scroll-bar:vertical .increment-button,
+.table-view .scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+}
+
+
+
+
+.pagination .button {
+    -fx-min-width: 35px;
+    -fx-min-height: 30px;
+    -fx-max-width: 35px;
+    -fx-max-height: 30px;
+    -fx-pref-width: 35px; /* 设置按钮的首选宽度 */
+    -fx-pref-height: 30px; /* 设置按钮的首选高度 */
+    -fx-background-color: #CCC8DF; /* 所有按钮的背景色 */
+    -fx-text-fill: #A298BB; /* 所有按钮的文字颜色 */
+    -fx-border-radius: 3; /* 所有按钮的边框圆角 */
+}
+
+.pagination .number-button {
+    -fx-background-insets: 3;
+    -fx-border-radius: 10; /* 所有按钮的边框圆角 */
+    -fx-background-color: #fff;
+    -fx-min-width: 35px;
+    -fx-min-height: 30px;
+    -fx-max-width: 35px;
+    -fx-max-height: 30px;
+    -fx-pref-width: 35px; /* 设置按钮的首选宽度 */
+    -fx-pref-height: 30px; /* 设置按钮的首选高度 */
+}
+.pagination .number-button:selected {
+    -fx-background-color: #A593C0; /* 选中的数字按钮的背景色 */
+    -fx-text-fill: #fff; /* 选中的数字按钮的文字颜色 */
+}
+
+.pagination .number-button:hover {
+    -fx-background-color: #A298BB; /* 鼠标悬停在数字按钮上的背景色 */
+}
+
+/* 假设 .left-arrow-button 和 .right-arrow-button 是导航箭头的类名 */
+.pagination .left-arrow-button,
+.pagination .right-arrow-button {
+    -fx-background-color: #fff; /* 左右导航箭头的背景色 */
+    -fx-pref-width: 10px;
+}
+
+.pagination .left-arrow-button:selected,
+.pagination .right-arrow-button:selected {
+    -fx-background-color: #A298BB; /* 被选中的左右导航箭头的背景色 */
+}
+
+.pagination .left-arrow-button:hover,
+.pagination .right-arrow-button:hover {
+    -fx-background-color: #A593C0; /* 鼠标悬停在左右导航箭头上的背景色 */
+}
+.caozuolist {
+    -fx-border-color: transparent transparent #B3A5BE transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-style: solid;
+}
